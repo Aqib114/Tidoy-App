@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA0382252DC22E1A00B5A1E3 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0382242DC22E1A00B5A1E3 /* SecondaryButton.swift */; };
+		BA0382272DC22ECA00B5A1E3 /* TertiaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0382262DC22ECA00B5A1E3 /* TertiaryButton.swift */; };
+		BA072BFE2DB236E400279CC2 /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA072BFD2DB236E400279CC2 /* OnBoardingScreen.swift */; };
+		BA072C012DB2380D00279CC2 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA072C002DB2380D00279CC2 /* SplashScreen.swift */; };
+		BA072C102DB23ACF00279CC2 /* Manrope-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA072C052DB23ACF00279CC2 /* Manrope-VariableFont_wght.ttf */; };
+		BA072C112DB23ACF00279CC2 /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA072C072DB23ACF00279CC2 /* Manrope-Medium.ttf */; };
+		BA072C122DB23ACF00279CC2 /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA072C082DB23ACF00279CC2 /* Manrope-SemiBold.ttf */; };
+		BA072C132DB23ACF00279CC2 /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA072C092DB23ACF00279CC2 /* Manrope-ExtraBold.ttf */; };
+		BA072C142DB23ACF00279CC2 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA072C0A2DB23ACF00279CC2 /* Manrope-Regular.ttf */; };
+		BA072C152DB23ACF00279CC2 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA072C0B2DB23ACF00279CC2 /* Manrope-ExtraLight.ttf */; };
+		BA072C162DB23ACF00279CC2 /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA072C0C2DB23ACF00279CC2 /* Manrope-Light.ttf */; };
+		BA072C172DB23ACF00279CC2 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA072C0D2DB23ACF00279CC2 /* Manrope-Bold.ttf */; };
+		BA072C182DB23ACF00279CC2 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = BA072C0E2DB23ACF00279CC2 /* OFL.txt */; };
+		BA072C192DB23AD000279CC2 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = BA072C0F2DB23ACF00279CC2 /* README.txt */; };
+		BA072C1C2DB23CBF00279CC2 /* Font + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA072C1B2DB23CBF00279CC2 /* Font + Extension.swift */; };
+		BA072C1E2DB23D3D00279CC2 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA072C1D2DB23D3D00279CC2 /* String + Extension.swift */; };
+		BA072C212DB2649700279CC2 /* OnBoardingScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA072C202DB2649700279CC2 /* OnBoardingScreen2.swift */; };
+		BA072C232DB264A700279CC2 /* OnBoardingScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA072C222DB264A700279CC2 /* OnBoardingScreen3.swift */; };
+		BAE593582DBB9B2300AC82EB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE593572DBB9B2300AC82EB /* PrimaryButton.swift */; };
+		BAE5935A2DBB9D7600AC82EB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE593592DBB9D7600AC82EB /* Colors.xcassets */; };
+		BAE5935C2DBB9F1D00AC82EB /* Padding + CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5935B2DBB9F1D00AC82EB /* Padding + CornerRadius.swift */; };
 		BAE8887E2DB22D250054BCE0 /* Tidoy_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE8887D2DB22D250054BCE0 /* Tidoy_AppApp.swift */; };
 		BAE888802DB22D250054BCE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE8887F2DB22D250054BCE0 /* ContentView.swift */; };
 		BAE888822DB22D280054BCE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE888812DB22D280054BCE0 /* Assets.xcassets */; };
@@ -14,6 +35,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA0382242DC22E1A00B5A1E3 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		BA0382262DC22ECA00B5A1E3 /* TertiaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TertiaryButton.swift; sourceTree = "<group>"; };
+		BA072BFD2DB236E400279CC2 /* OnBoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen.swift; sourceTree = "<group>"; };
+		BA072C002DB2380D00279CC2 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		BA072C052DB23ACF00279CC2 /* Manrope-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		BA072C072DB23ACF00279CC2 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		BA072C082DB23ACF00279CC2 /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		BA072C092DB23ACF00279CC2 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
+		BA072C0A2DB23ACF00279CC2 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		BA072C0B2DB23ACF00279CC2 /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
+		BA072C0C2DB23ACF00279CC2 /* Manrope-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.ttf"; sourceTree = "<group>"; };
+		BA072C0D2DB23ACF00279CC2 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		BA072C0E2DB23ACF00279CC2 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		BA072C0F2DB23ACF00279CC2 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		BA072C1B2DB23CBF00279CC2 /* Font + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font + Extension.swift"; sourceTree = "<group>"; };
+		BA072C1D2DB23D3D00279CC2 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		BA072C1F2DB23DF600279CC2 /* Tidoy-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tidoy-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BA072C202DB2649700279CC2 /* OnBoardingScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen2.swift; sourceTree = "<group>"; };
+		BA072C222DB264A700279CC2 /* OnBoardingScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen3.swift; sourceTree = "<group>"; };
+		BAE593572DBB9B2300AC82EB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		BAE593592DBB9D7600AC82EB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BAE5935B2DBB9F1D00AC82EB /* Padding + CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Padding + CornerRadius.swift"; sourceTree = "<group>"; };
 		BAE8887A2DB22D250054BCE0 /* Tidoy App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tidoy App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE8887D2DB22D250054BCE0 /* Tidoy_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tidoy_AppApp.swift; sourceTree = "<group>"; };
 		BAE8887F2DB22D250054BCE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +75,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA072BFB2DB236BA00279CC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA072BFF2DB237F700279CC2 /* SplashScreen */,
+				BA072BFC2DB236C800279CC2 /* OnBoarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA072BFC2DB236C800279CC2 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				BA072BFD2DB236E400279CC2 /* OnBoardingScreen.swift */,
+				BA072C202DB2649700279CC2 /* OnBoardingScreen2.swift */,
+				BA072C222DB264A700279CC2 /* OnBoardingScreen3.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		BA072BFF2DB237F700279CC2 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BA072C002DB2380D00279CC2 /* SplashScreen.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		BA072C022DB23AB600279CC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BAE888812DB22D280054BCE0 /* Assets.xcassets */,
+				BAE593592DBB9D7600AC82EB /* Colors.xcassets */,
+				BA072C032DB23ABE00279CC2 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA072C032DB23ABE00279CC2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BA072C042DB23ACF00279CC2 /* Manrope */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BA072C042DB23ACF00279CC2 /* Manrope */ = {
+			isa = PBXGroup;
+			children = (
+				BA072C052DB23ACF00279CC2 /* Manrope-VariableFont_wght.ttf */,
+				BA072C062DB23ACF00279CC2 /* static */,
+				BA072C0E2DB23ACF00279CC2 /* OFL.txt */,
+				BA072C0F2DB23ACF00279CC2 /* README.txt */,
+			);
+			name = Manrope;
+			path = "../../../../../../Downloads/Lato,Manrope/Manrope";
+			sourceTree = "<group>";
+		};
+		BA072C062DB23ACF00279CC2 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				BA072C072DB23ACF00279CC2 /* Manrope-Medium.ttf */,
+				BA072C082DB23ACF00279CC2 /* Manrope-SemiBold.ttf */,
+				BA072C092DB23ACF00279CC2 /* Manrope-ExtraBold.ttf */,
+				BA072C0A2DB23ACF00279CC2 /* Manrope-Regular.ttf */,
+				BA072C0B2DB23ACF00279CC2 /* Manrope-ExtraLight.ttf */,
+				BA072C0C2DB23ACF00279CC2 /* Manrope-Light.ttf */,
+				BA072C0D2DB23ACF00279CC2 /* Manrope-Bold.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		BA072C1A2DB23C5900279CC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA072C1B2DB23CBF00279CC2 /* Font + Extension.swift */,
+				BA072C1D2DB23D3D00279CC2 /* String + Extension.swift */,
+				BAE5935B2DBB9F1D00AC82EB /* Padding + CornerRadius.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BAE593562DBB9B0900AC82EB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BAE593572DBB9B2300AC82EB /* PrimaryButton.swift */,
+				BA0382242DC22E1A00B5A1E3 /* SecondaryButton.swift */,
+				BA0382262DC22ECA00B5A1E3 /* TertiaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		BAE888712DB22D250054BCE0 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +185,13 @@
 		BAE8887C2DB22D250054BCE0 /* Tidoy App */ = {
 			isa = PBXGroup;
 			children = (
+				BAE593562DBB9B0900AC82EB /* Components */,
+				BA072C1F2DB23DF600279CC2 /* Tidoy-App-Info.plist */,
+				BA072C1A2DB23C5900279CC2 /* Extensions */,
+				BA072C022DB23AB600279CC2 /* Resources */,
+				BA072BFB2DB236BA00279CC2 /* Views */,
 				BAE8887D2DB22D250054BCE0 /* Tidoy_AppApp.swift */,
 				BAE8887F2DB22D250054BCE0 /* ContentView.swift */,
-				BAE888812DB22D280054BCE0 /* Assets.xcassets */,
 				BAE888832DB22D280054BCE0 /* Preview Content */,
 			);
 			path = "Tidoy App";
@@ -125,8 +263,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA072C122DB23ACF00279CC2 /* Manrope-SemiBold.ttf in Resources */,
+				BA072C182DB23ACF00279CC2 /* OFL.txt in Resources */,
+				BAE5935A2DBB9D7600AC82EB /* Colors.xcassets in Resources */,
 				BAE888852DB22D280054BCE0 /* Preview Assets.xcassets in Resources */,
 				BAE888822DB22D280054BCE0 /* Assets.xcassets in Resources */,
+				BA072C132DB23ACF00279CC2 /* Manrope-ExtraBold.ttf in Resources */,
+				BA072C112DB23ACF00279CC2 /* Manrope-Medium.ttf in Resources */,
+				BA072C152DB23ACF00279CC2 /* Manrope-ExtraLight.ttf in Resources */,
+				BA072C172DB23ACF00279CC2 /* Manrope-Bold.ttf in Resources */,
+				BA072C102DB23ACF00279CC2 /* Manrope-VariableFont_wght.ttf in Resources */,
+				BA072C162DB23ACF00279CC2 /* Manrope-Light.ttf in Resources */,
+				BA072C192DB23AD000279CC2 /* README.txt in Resources */,
+				BA072C142DB23ACF00279CC2 /* Manrope-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +286,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE593582DBB9B2300AC82EB /* PrimaryButton.swift in Sources */,
+				BA072C232DB264A700279CC2 /* OnBoardingScreen3.swift in Sources */,
+				BA0382252DC22E1A00B5A1E3 /* SecondaryButton.swift in Sources */,
+				BAE5935C2DBB9F1D00AC82EB /* Padding + CornerRadius.swift in Sources */,
+				BA072C012DB2380D00279CC2 /* SplashScreen.swift in Sources */,
+				BA072BFE2DB236E400279CC2 /* OnBoardingScreen.swift in Sources */,
+				BA072C212DB2649700279CC2 /* OnBoardingScreen2.swift in Sources */,
+				BA0382272DC22ECA00B5A1E3 /* TertiaryButton.swift in Sources */,
+				BA072C1E2DB23D3D00279CC2 /* String + Extension.swift in Sources */,
 				BAE888802DB22D250054BCE0 /* ContentView.swift in Sources */,
+				BA072C1C2DB23CBF00279CC2 /* Font + Extension.swift in Sources */,
 				BAE8887E2DB22D250054BCE0 /* Tidoy_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +434,7 @@
 				DEVELOPMENT_TEAM = YBC6QZE5G7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tidoy-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +464,7 @@
 				DEVELOPMENT_TEAM = YBC6QZE5G7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tidoy-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -11,7 +11,7 @@ import SwiftUI
 struct Tidoy_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnBoardingScreen(isDisabled: .constant(false))
         }
     }
 }

@@ -9,10 +9,22 @@ import SwiftUI
 
 struct SplashScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(){
+            Color.orange.ignoresSafeArea()
+           
+            VStack {
+                Spacer()
+                Image("Logo")
+                    .frame(alignment: .center)
+                Image("Background")
+                    .resizable()
+                    .frame(maxWidth: .infinity,
+                    maxHeight: 375)
+            }
+        }
+        .ignoresSafeArea()
     }
 }
-
 #Preview {
     SplashScreen()
 }
