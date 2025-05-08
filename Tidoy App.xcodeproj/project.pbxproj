@@ -25,6 +25,7 @@
 		BA072C1E2DB23D3D00279CC2 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA072C1D2DB23D3D00279CC2 /* String + Extension.swift */; };
 		BA072C212DB2649700279CC2 /* OnBoardingScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA072C202DB2649700279CC2 /* OnBoardingScreen2.swift */; };
 		BA072C232DB264A700279CC2 /* OnBoardingScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA072C222DB264A700279CC2 /* OnBoardingScreen3.swift */; };
+		BA64ADFF2DCC870B00571977 /* CustomButtonTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64ADFE2DCC870A00571977 /* CustomButtonTabs.swift */; };
 		BAE593582DBB9B2300AC82EB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE593572DBB9B2300AC82EB /* PrimaryButton.swift */; };
 		BAE5935A2DBB9D7600AC82EB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE593592DBB9D7600AC82EB /* Colors.xcassets */; };
 		BAE5935C2DBB9F1D00AC82EB /* Padding + CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5935B2DBB9F1D00AC82EB /* Padding + CornerRadius.swift */; };
@@ -54,6 +55,7 @@
 		BA072C1F2DB23DF600279CC2 /* Tidoy-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tidoy-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BA072C202DB2649700279CC2 /* OnBoardingScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen2.swift; sourceTree = "<group>"; };
 		BA072C222DB264A700279CC2 /* OnBoardingScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen3.swift; sourceTree = "<group>"; };
+		BA64ADFE2DCC870A00571977 /* CustomButtonTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonTabs.swift; sourceTree = "<group>"; };
 		BAE593572DBB9B2300AC82EB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		BAE593592DBB9D7600AC82EB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		BAE5935B2DBB9F1D00AC82EB /* Padding + CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Padding + CornerRadius.swift"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				BAE593572DBB9B2300AC82EB /* PrimaryButton.swift */,
 				BA0382242DC22E1A00B5A1E3 /* SecondaryButton.swift */,
 				BA0382262DC22ECA00B5A1E3 /* TertiaryButton.swift */,
+				BA64ADFE2DCC870A00571977 /* CustomButtonTabs.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				BA072C012DB2380D00279CC2 /* SplashScreen.swift in Sources */,
 				BA072BFE2DB236E400279CC2 /* OnBoardingScreen.swift in Sources */,
 				BA072C212DB2649700279CC2 /* OnBoardingScreen2.swift in Sources */,
+				BA64ADFF2DCC870B00571977 /* CustomButtonTabs.swift in Sources */,
 				BA0382272DC22ECA00B5A1E3 /* TertiaryButton.swift in Sources */,
 				BA072C1E2DB23D3D00279CC2 /* String + Extension.swift in Sources */,
 				BAE888802DB22D250054BCE0 /* ContentView.swift in Sources */,
