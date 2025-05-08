@@ -33,6 +33,7 @@
 		BAE888802DB22D250054BCE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE8887F2DB22D250054BCE0 /* ContentView.swift */; };
 		BAE888822DB22D280054BCE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE888812DB22D280054BCE0 /* Assets.xcassets */; };
 		BAE888852DB22D280054BCE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE888842DB22D280054BCE0 /* Preview Assets.xcassets */; };
+		BAF040202DCC96EE00458972 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF0401F2DCC96EE00458972 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		BAE8887F2DB22D250054BCE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAE888812DB22D280054BCE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAE888842DB22D280054BCE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAF0401F2DCC96EE00458972 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,28 +82,29 @@
 		BA072BFB2DB236BA00279CC2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BA072BFF2DB237F700279CC2 /* SplashScreen */,
-				BA072BFC2DB236C800279CC2 /* OnBoarding */,
+				BAF0401E2DCC96C900458972 /* LoginView */,
+				BA072BFF2DB237F700279CC2 /* SplashView */,
+				BA072BFC2DB236C800279CC2 /* OnBoardingView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		BA072BFC2DB236C800279CC2 /* OnBoarding */ = {
+		BA072BFC2DB236C800279CC2 /* OnBoardingView */ = {
 			isa = PBXGroup;
 			children = (
 				BA072BFD2DB236E400279CC2 /* OnBoardingScreen.swift */,
 				BA072C202DB2649700279CC2 /* OnBoardingScreen2.swift */,
 				BA072C222DB264A700279CC2 /* OnBoardingScreen3.swift */,
 			);
-			path = OnBoarding;
+			path = OnBoardingView;
 			sourceTree = "<group>";
 		};
-		BA072BFF2DB237F700279CC2 /* SplashScreen */ = {
+		BA072BFF2DB237F700279CC2 /* SplashView */ = {
 			isa = PBXGroup;
 			children = (
 				BA072C002DB2380D00279CC2 /* SplashScreen.swift */,
 			);
-			path = SplashScreen;
+			path = SplashView;
 			sourceTree = "<group>";
 		};
 		BA072C022DB23AB600279CC2 /* Resources */ = {
@@ -208,6 +211,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BAF0401E2DCC96C900458972 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				BAF0401F2DCC96EE00458972 /* LoginView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -297,6 +308,7 @@
 				BA072BFE2DB236E400279CC2 /* OnBoardingScreen.swift in Sources */,
 				BA072C212DB2649700279CC2 /* OnBoardingScreen2.swift in Sources */,
 				BA64ADFF2DCC870B00571977 /* CustomButtonTabs.swift in Sources */,
+				BAF040202DCC96EE00458972 /* LoginView.swift in Sources */,
 				BA0382272DC22ECA00B5A1E3 /* TertiaryButton.swift in Sources */,
 				BA072C1E2DB23D3D00279CC2 /* String + Extension.swift in Sources */,
 				BAE888802DB22D250054BCE0 /* ContentView.swift in Sources */,
