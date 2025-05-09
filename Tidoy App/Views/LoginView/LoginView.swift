@@ -11,161 +11,137 @@ struct LoginView: View {
     @State var selectedIndex: Int = 0
     var titles = ["Username", "Phone Number"]
     var body: some View {
+        
         VStack{
-            HStack{
-                Text("Welcome to Tidoy  👋 ")
-                    .font(.heading6)
-                    .foregroundStyle(.text100)
-                Spacer()
-                Image("ic_Close")
-            }
-            .frame(height: 25)
-            .padding(.padding16)
-            .padding(.top, 45)
-            Spacer()
-                .frame(height: 25)
+            headerView
+                .padding(.top, 60)
             CustomButtonTabs(index: $selectedIndex, titles: titles)
-//                .onTapGesture {
-//                    selectedIndex = selectedIndex == 0 ? 1 : 0
-//                }
-            Spacer()
-                .frame(height: 12)
-            if selectedIndex == 0 {
-                HStack{
-                    Text("Username")
-                        .font(.bodySMedium)
-                        .foregroundStyle(.text100)
-                    Spacer()
-                }
-//                .padding(.padding16)
-//                TextField("Enter your username", text: .constant(""))
-//                    .frame(height: 50)
-//                    .textFieldStyle(.roundedBorder)
-                RoundedRectangle(cornerRadius: .cornerRadiusM)
-                    .stroke(Color.background50, lineWidth: 1)
-                    .frame(height: 50)
-                    .overlay(alignment: .leading) {
-                        Text("Enter your username")
-                            .font(.bodyMMedium)
-                            .foregroundStyle(.text60)
-                            .padding(.leading, 16)
-                    }
-                HStack{
-                    Text("Password")
-                        .font(.bodySMedium)
-                        .foregroundStyle(.text100)
-                    Spacer()
-                }
-//                .padding(.padding16)
-//                TextField("********", text: .constant(""))
-//                    .frame(height: 50)
-//                    .textFieldStyle(.roundedBorder)
-                RoundedRectangle(cornerRadius: .cornerRadiusM)
-                    .stroke(Color.background50, lineWidth: 1)
-                    .frame(height: 50)
-                    .overlay(alignment: .leading) {
-                        Text("********")
-                            .font(.bodyMMedium)
-                            .foregroundStyle(.text60)
-                            .padding(.leading, 16)
-                            
-                            
-                    }
-                Spacer()
-                    .frame(height: 12)
-                HStack{
-                    Text("Need Help?")
-                        .font(.bodyXSSemiBold)
-                        .foregroundStyle(.text90)
-                    Spacer()
-                    Text("Forgot Password")
-                        .font(.bodyXSSemiBold)
-                        .foregroundStyle(.text90)
-                }
-                Spacer()
-                    .frame(height: 56)
-            }
-            else {
-                VStack(alignment: .leading){
-                    Spacer()
-                        .frame(height: 12)
-                    HStack{
-                        Text("Phone Number")
-                            .font(.bodySMedium)
-                            .foregroundStyle(.text100)
-                        Spacer()
-                    }
-//                    .padding(.padding16)
-                    RoundedRectangle(cornerRadius: .cornerRadiusM)
-                        .stroke(Color.background50, lineWidth: 1)
-                        .frame(height: 50)
-                        .overlay(alignment: .leading) {
-                            Text("🇮🇩 +62 ex : 81234567890")
-                                .font(.bodyMMedium)
-                                .foregroundStyle(.text60)
-                                .padding(.leading, 16)
-                                
-                                
-                        }
-//                    TextField("Enter your Phone Number", text: .constant(""))
-//                        .frame(height: 50)
-//                        .textFieldStyle(.roundedBorder)
-                    Text("We'll call or text you to confirm your number. Standard\n message and data rates apply")
-                        .font(.bodyXSRegular)
-                        .foregroundStyle(.text100)
+                .padding(.top, 25)
+            Group {
+                if selectedIndex == 0 {
+                    usernameLoginSection
+                } else {
+                    phoneLoginSection
                 }
             }
+            .padding(.top, 12)
             PrimaryButton(title: "Login", action: {})
                 .frame(height: 50)
-            Spacer()
-                .frame(height: 32)
-            VStack {
-                ZStack {
-                    Divider()
-                        .frame(height: 1)
-                    Text("OR")
-                        .foregroundStyle(.text60)
-                        .font(.bodyXSSemiBold)
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 5)
-                        .background(.background30)
-                        .clipShape(RoundedRectangle(cornerRadius: .cornerRadiusM))
-                }
-            }
-            Spacer()
-                .frame(height: 30)
-            HStack(spacing: 12){
-                RoundedRectangle(cornerRadius: .cornerRadiusM)
-                    .fill(.googleBackground)
-                    .overlay(){
-                        Image("logo_Google")
-                    }
-                RoundedRectangle(cornerRadius: .cornerRadiusM)
-                    .fill(.facebookBackground)
-                    .overlay(){
-                        Image("logo_Facebook")
-                    }
-                RoundedRectangle(cornerRadius: .cornerRadiusM)
-                    .fill(.appleBackground)
-                    .overlay(){
-                        Image("logo_Apple")
-                    }
-            }
-            .frame(height: 56)
-            Spacer()
-                .frame(height: 32)
-            HStack{
-                Text("Don’t have an account?")
-                    .font(.bodySRegular)
-                    .foregroundStyle(.text100)
-                Text("Register Here")
-                    .font(.bodySSemiBold)
-                    .foregroundStyle(.primaryMain)
-            }
+                .padding(.top, 32)
+            
+            orDivider
+                .padding(.top, 30)
+            
+            socialLoginButtons
+                .padding(.top, 30)
+            
+            registerText
+                .padding(.top, 32)
+            
             Spacer()
         }
         .padding(.horizontal,.padding16)
         .ignoresSafeArea()
+    }
+    
+    private var headerView: some View {
+        HStack{
+            Text("Welcome to Tidoy  👋 ")
+                .font(.heading6)
+                .foregroundStyle(.text100)
+            Spacer()
+            Image("ic_Close")
+        }
+        .padding(.padding16)
+    }
+    
+    private var usernameLoginSection: some View {
+        VStack(spacing: 12) {
+            inputLabel("Username")
+            inputField(placeholder: "Enter your username")
+            
+            inputLabel("Password")
+            inputField(placeholder: "********")
+            
+            HStack {
+                Text("Need Help?")
+                    .font(.bodyXSSemiBold)
+                    .foregroundStyle(.text90)
+                Spacer()
+                Text("Forgot Password")
+                    .font(.bodyXSSemiBold)
+                    .foregroundStyle(.text90)
+            }
+        }
+    }
+    private var phoneLoginSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            inputLabel("Phone Number")
+            inputField(placeholder: "🇮🇩 +62 ex : 81234567890")
+            
+            Text("We'll call or text you to confirm your number. Standard\nmessage and data rates apply")
+                .font(.bodyXSRegular)
+                .foregroundStyle(.text100)
+        }
+    }
+    private func inputLabel(_ text: String) -> some View {
+        HStack {
+            Text(text)
+                .font(.bodySMedium)
+                .foregroundStyle(.text100)
+            Spacer()
+        }
+    }
+    private func inputField(placeholder: String) -> some View {
+        RoundedRectangle(cornerRadius: .cornerRadiusM)
+            .stroke(Color.background50, lineWidth: 1)
+            .frame(height: 50)
+            .overlay(alignment: .leading) {
+                Text(placeholder)
+                    .font(.bodyMMedium)
+                    .foregroundStyle(.text60)
+                    .padding(.leading, 16)
+            }
+    }
+    
+    private var orDivider: some View {
+        ZStack {
+            Divider()
+                .frame(height: 1)
+            Text("OR")
+                .foregroundStyle(.text60)
+                .font(.bodyXSSemiBold)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .background(.background30)
+                .clipShape(RoundedRectangle(cornerRadius: .cornerRadiusM))
+        }
+    }
+    private var socialLoginButtons: some View {
+        HStack(spacing: 12) {
+            socialButton(image: "logo_Google", color: .googleBackground)
+            socialButton(image: "logo_Facebook", color: .facebookBackground)
+            socialButton(image: "logo_Apple", color: .appleBackground)
+        }
+        .frame(height: 56)
+    }
+    
+    private func socialButton(image: String, color: Color) -> some View {
+        RoundedRectangle(cornerRadius: .cornerRadiusM)
+            .fill(color)
+            .overlay {
+                Image(image)
+            }
+    }
+    private var registerText: some View {
+        HStack {
+            Text("Don’t have an account?")
+                .font(.bodySRegular)
+                .foregroundStyle(.text100)
+            Text("Register Here")
+                .font(.bodySSemiBold)
+                .foregroundStyle(.primaryMain)
+        }
     }
 }
 
