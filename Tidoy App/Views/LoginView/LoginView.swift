@@ -14,6 +14,7 @@ struct LoginView: View {
     @State private var password: String = ""
     @State private var phoneNumber: String = ""
     @State  var usernameState: TextFieldState
+    @State  var phoneNumberState: TextFieldState
     @State  var passwordState: TextFieldState
     var titles = ["Username", "Phone Number"]
     var body: some View {
@@ -101,10 +102,11 @@ struct LoginView: View {
     private var phoneLoginSection: some View {
         VStack(alignment: .leading, spacing: 12) {
             PhoneNumberTextField(
-                state: .constant(.normal),
+                state: $phoneNumberState,
                 text: $phoneNumber,
                 placeholder: "ex : 81234567890",
                 flagCode: "🇮🇩 +92",
+                title: "Phone Number", 
                 iconAction: {}
             )
             .frame(height: 90)
@@ -164,5 +166,5 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView(usernameState: .normal, passwordState: .normal)
+    LoginView(usernameState: .normal, phoneNumberState: .normal, passwordState: .normal)
 }

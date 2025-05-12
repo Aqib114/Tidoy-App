@@ -26,6 +26,7 @@
 		BA072C212DB2649700279CC2 /* OnBoardingScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA072C202DB2649700279CC2 /* OnBoardingScreen2.swift */; };
 		BA072C232DB264A700279CC2 /* OnBoardingScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA072C222DB264A700279CC2 /* OnBoardingScreen3.swift */; };
 		BA1768EB2DD200A300A04B01 /* PhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1768EA2DD200A300A04B01 /* PhoneNumberTextField.swift */; };
+		BA1768ED2DD20DD000A04B01 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1768EC2DD20DD000A04B01 /* SignUpView.swift */; };
 		BA64ADFF2DCC870B00571977 /* CustomButtonTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64ADFE2DCC870A00571977 /* CustomButtonTabs.swift */; };
 		BAE593582DBB9B2300AC82EB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE593572DBB9B2300AC82EB /* PrimaryButton.swift */; };
 		BAE5935A2DBB9D7600AC82EB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE593592DBB9D7600AC82EB /* Colors.xcassets */; };
@@ -61,6 +62,7 @@
 		BA072C202DB2649700279CC2 /* OnBoardingScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen2.swift; sourceTree = "<group>"; };
 		BA072C222DB264A700279CC2 /* OnBoardingScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen3.swift; sourceTree = "<group>"; };
 		BA1768EA2DD200A300A04B01 /* PhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextField.swift; sourceTree = "<group>"; };
+		BA1768EC2DD20DD000A04B01 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		BA64ADFE2DCC870A00571977 /* CustomButtonTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonTabs.swift; sourceTree = "<group>"; };
 		BAE593572DBB9B2300AC82EB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		BAE593592DBB9D7600AC82EB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				BAF0401E2DCC96C900458972 /* LoginView */,
 				BA072BFF2DB237F700279CC2 /* SplashView */,
 				BA072BFC2DB236C800279CC2 /* OnBoardingView */,
+				BA1768EC2DD20DD000A04B01 /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				BA0382252DC22E1A00B5A1E3 /* SecondaryButton.swift in Sources */,
 				BAF718A52DCE062B001F01A6 /* View+Extension.swift in Sources */,
 				BAE5935C2DBB9F1D00AC82EB /* Padding+CornerRadius.swift in Sources */,
+				BA1768ED2DD20DD000A04B01 /* SignUpView.swift in Sources */,
 				BA072C012DB2380D00279CC2 /* SplashScreen.swift in Sources */,
 				BA072BFE2DB236E400279CC2 /* OnBoardingScreen.swift in Sources */,
 				BA072C212DB2649700279CC2 /* OnBoardingScreen2.swift in Sources */,
