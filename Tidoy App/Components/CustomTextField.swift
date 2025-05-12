@@ -38,7 +38,7 @@ struct CustomTextField: View {
                                     Text(placeholder).foregroundColor(.gray)
                                 }
                                 .foregroundStyle(state.labelColor)
-                                .font(.bodySMedium)
+                                .font(.bodyMMedium)
                         } else {
                             TextField("", text: $text)
                                 .disabled(state == .disable)
@@ -46,7 +46,7 @@ struct CustomTextField: View {
                                     Text(placeholder).foregroundColor(.gray)
                                 }
                                 .foregroundStyle(state.labelColor)
-                                .font(.bodySMedium)
+                                .font(.bodyMMedium)
                         }
                         
                         rightIcon

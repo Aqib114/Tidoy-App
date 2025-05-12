@@ -13,10 +13,13 @@ struct PhoneNumberTextField: View {
     var placeholder: String
     var hint: String?
     var flagCode : String
+    var title: String
     var iconAction: () -> Void
     var body: some View {
         VStack(alignment: .leading) {
-            
+            Text(title)
+                .font(.bodySMedium)
+                .foregroundStyle(state.labelColor)
             HStack{
                 RoundedRectangle(cornerRadius: .cornerRadiusS)
                     .fill(state.backgroundColor)
@@ -41,7 +44,9 @@ struct PhoneNumberTextField: View {
                                 .disabled(state == .disable)
                                 .keyboardType(.numberPad)
                                 .placeholder(when: text.isEmpty) {
-                                    Text(placeholder).foregroundColor(state.placeholderColor)
+                                    Text(placeholder)
+                                        .foregroundColor(state.placeholderColor)
+                                        .font(.bodyMMedium)
                                 }
                         }
                         .padding(.horizontal, .padding12)
@@ -73,12 +78,12 @@ private struct NumberFieldPreviewWrapper: View {
     @State private var text: String = ""
     var body: some View {
         VStack(spacing: 10) {
-            PhoneNumberTextField(state: .constant(.normal), text: $text, placeholder: "Normal TextField", hint: "This is normal hint", flagCode: "🇮🇩 +92", iconAction: {})
+            PhoneNumberTextField(state: .constant(.normal), text: $text, placeholder: "Normal TextField", hint: "This is normal hint", flagCode: "🇮🇩 +92", title: "Phone Number", iconAction: {})
             
-            PhoneNumberTextField(state: .constant(.focus), text: $text, placeholder: "Normal TextField", hint: "This is focus hint", flagCode: "🇮🇴 +353", iconAction: {})
-            PhoneNumberTextField(state: .constant(.filled), text: $text, placeholder: "Normal TextField",hint: "This is filled hint", flagCode: "🇮🇩 +92",  iconAction: {})
-            PhoneNumberTextField(state: .constant(.disable), text: $text, placeholder: "Normal TextField", hint: "This is disable hint", flagCode: "🇮🇩 +92", iconAction: {})
-            PhoneNumberTextField(state: .constant(.error), text: $text, placeholder: "Normal TextField",hint: "This is error hint", flagCode: "🇮🇷 +62",  iconAction: {})
+            PhoneNumberTextField(state: .constant(.focus), text: $text, placeholder: "Normal TextField", hint: "This is focus hint", flagCode: "🇮🇴 +353", title: "Phone Number", iconAction: {})
+            PhoneNumberTextField(state: .constant(.filled), text: $text, placeholder: "Normal TextField",hint: "This is filled hint", flagCode: "🇮🇩 +92", title: "Phone Number",  iconAction: {})
+            PhoneNumberTextField(state: .constant(.disable), text: $text, placeholder: "Normal TextField", hint: "This is disable hint", flagCode: "🇮🇩 +92", title: "Phone Number", iconAction: {})
+            PhoneNumberTextField(state: .constant(.error), text: $text, placeholder: "Normal TextField",hint: "This is error hint", flagCode: "🇮🇷 +62", title: "Phone Number",  iconAction: {})
         }
         .padding(.horizontal, 12)
     }
