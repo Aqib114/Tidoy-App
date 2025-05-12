@@ -10,12 +10,13 @@ import SwiftUI
 struct CustomTextField: View {
     @Binding var state: TextFieldState
     @Binding var text : String
+    @Binding var isSecure: Bool
     var title: String
     var leftIcon : Image
     var rightIcon : Image
     var hint: String?
     var placeholder: String
-    
+    var rightIconAction: () -> Void
     var body: some View {
         VStack(alignment: .leading, spacing: 6.0){
             Spacer()
@@ -25,20 +26,33 @@ struct CustomTextField: View {
             RoundedRectangle(cornerRadius: .cornerRadiusM)
                 .fill(state.backgroundColor)
                 .stroke(state.borderColor, lineWidth: 1)
-                .frame(height: 50)
+                .frame(width: .infinity, height: 50)
                 .overlay(){
                     HStack{
                         leftIcon
                             .foregroundStyle(state.iconColor)
-                        TextField("", text: $text)
-                            .disabled(state == .disable ? true : false)
-                            .placeholder(when: text.isEmpty) {
-                                    Text("Placeholder recreated").foregroundColor(.gray)
-                            }
-                            .foregroundStyle(state.labelColor)
-                            .font(.bodySMedium)
+                        if isSecure {
+                            SecureField("", text: $text)
+                                .disabled(state == .disable)
+                                .placeholder(when: text.isEmpty) {
+                                    Text(placeholder).foregroundColor(.gray)
+                                }
+                                .foregroundStyle(state.labelColor)
+                                .font(.bodySMedium)
+                        } else {
+                            TextField("", text: $text)
+                                .disabled(state == .disable)
+                                .placeholder(when: text.isEmpty) {
+                                    Text(placeholder).foregroundColor(.gray)
+                                }
+                                .foregroundStyle(state.labelColor)
+                                .font(.bodySMedium)
+                        }
                         
                         rightIcon
+                            .onTapGesture {
+                                rightIconAction()
+                            }
                             .foregroundStyle(state.iconColor)
                     }
                     .padding(.horizontal, .padding12)
@@ -56,7 +70,7 @@ struct CustomTextField: View {
             }
             Spacer()
         }
-        .padding(.horizontal, .padding16)
+//        .padding(.horizontal, .padding16)
     }
 }
 
@@ -71,48 +85,57 @@ private struct PreviewWrapper: View {
         VStack(spacing: 10) {
             CustomTextField(
                 state: .constant(.normal),
-                text: $text,
+                text: $text, isSecure: .constant(false),
                 title: "Label",
                 leftIcon: Image(systemName: "plus.circle"),
                 rightIcon: Image(systemName: "plus.circle"),
                 hint: "This is an normal message",
-                placeholder: "Enter text here"
+                placeholder: "Enter text here", 
+                rightIconAction: {}
             )
             CustomTextField(
                 state: .constant(.focus),
                 text: $text,
+                isSecure: .constant(true),
                 title: "Label",
                 leftIcon: Image(systemName: "plus.circle"),
                 rightIcon: Image(systemName: "plus.circle"),
                 hint: "This is an focus message",
-                placeholder: "Enter text here"
+                placeholder: "Enter text here", 
+                rightIconAction: {}
             )
             CustomTextField(
                 state: .constant(.filled),
                 text: $text,
+                isSecure: .constant(false),
                 title: "Label",
                 leftIcon: Image(systemName: "plus.circle"),
                 rightIcon: Image(systemName: "plus.circle"),
                 hint: "This is an filled message",
-                placeholder: "Enter text here"
+                placeholder: "Enter text here",
+                rightIconAction: {}
             )
             CustomTextField(
                 state: .constant(.disable),
                 text: $text,
+                isSecure: .constant(false),
                 title: "Label",
                 leftIcon: Image(systemName: "plus.circle"),
                 rightIcon: Image(systemName: "plus.circle"),
                 hint: "This is an disable message",
-                placeholder: "Enter text here"
+                placeholder: "Enter text here",
+                rightIconAction: {}
             )
             CustomTextField(
                 state: .constant(.error),
                 text: $text,
+                isSecure: .constant(false),
                 title: "Label",
                 leftIcon: Image(systemName: "plus.circle"),
                 rightIcon: Image(systemName: "plus.circle"),
                 hint: "This is an error message",
-                placeholder: "Enter text here"
+                placeholder: "Enter text here",
+                rightIconAction: {}
             )
         }
         .padding()
