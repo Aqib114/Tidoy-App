@@ -9,6 +9,12 @@ import SwiftUI
 
 struct LoginView: View {
     @State var selectedIndex: Int = 0
+    @State private var isPasswordVisible = false
+    @State private var username: String = ""
+    @State private var password: String = ""
+    @State private var phoneNumber: String = ""
+    @State  var usernameState: TextFieldState
+    @State  var passwordState: TextFieldState
     var titles = ["Username", "Phone Number"]
     var body: some View {
         
@@ -24,11 +30,10 @@ struct LoginView: View {
                     phoneLoginSection
                 }
             }
-            .padding(.top, 12)
+            .padding(.top, 20)
             PrimaryButton(title: "Login", action: {})
                 .frame(height: 50)
                 .padding(.top, 32)
-            
             orDivider
                 .padding(.top, 30)
             
@@ -57,11 +62,30 @@ struct LoginView: View {
     
     private var usernameLoginSection: some View {
         VStack(spacing: 12) {
-            inputLabel("Username")
-            inputField(placeholder: "Enter your username")
-            
-            inputLabel("Password")
-            inputField(placeholder: "********")
+            CustomTextField(
+                state: $usernameState,
+                text: $username,
+                isSecure: .constant(false),
+                title: "Username",
+                leftIcon: Image(systemName: ""),
+                rightIcon: Image(systemName: ""),
+                hint: "",
+                placeholder: "Enter your user name",
+                rightIconAction: {
+                })
+            .frame(height: 90)
+            CustomTextField(
+                state: $passwordState,
+                text: $password,
+                isSecure: .constant(true),
+                title: "Password",
+                leftIcon: Image(systemName: ""),
+                rightIcon: Image(systemName: "eye"),
+                hint: "",
+                placeholder: "********",
+                rightIconAction: {
+                })
+            .frame(height: 90)
             
             HStack {
                 Text("Need Help?")
@@ -76,8 +100,14 @@ struct LoginView: View {
     }
     private var phoneLoginSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            inputLabel("Phone Number")
-            inputField(placeholder: "🇮🇩 +62 ex : 81234567890")
+            PhoneNumberTextField(
+                state: .constant(.normal),
+                text: $phoneNumber,
+                placeholder: "ex : 81234567890",
+                flagCode: "🇮🇩 +92",
+                iconAction: {}
+            )
+            .frame(height: 90)
             
             Text("We'll call or text you to confirm your number. Standard\nmessage and data rates apply")
                 .font(.bodyXSRegular)
@@ -92,18 +122,6 @@ struct LoginView: View {
             Spacer()
         }
     }
-    private func inputField(placeholder: String) -> some View {
-        RoundedRectangle(cornerRadius: .cornerRadiusM)
-            .stroke(Color.background50, lineWidth: 1)
-            .frame(height: 50)
-            .overlay(alignment: .leading) {
-                Text(placeholder)
-                    .font(.bodyMMedium)
-                    .foregroundStyle(.text60)
-                    .padding(.leading, 16)
-            }
-    }
-    
     private var orDivider: some View {
         ZStack {
             Divider()
@@ -146,5 +164,5 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    LoginView(usernameState: .normal, passwordState: .normal)
 }
